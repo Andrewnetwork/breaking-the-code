@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="test">
+</Property><Property Name="Solution File" Value="F:\MathematicsServerClient\test.sln">
+</Property><Property Name="User Options File" Value="F:\MathematicsServerClient\test.suo">
+</Property><Property Name="Date" Value="Friday, February 11, 2011">
+</Property><Property Name="Time" Value="12:56 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="test.sln" Description="File successfully backed up as F:\MathematicsServerClient\test.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="test.suo" Description="File successfully backed up as F:\MathematicsServerClient\test.suo.old">
+</Event><Event ErrorLevel="0" Project="test" Source="test\test.vcproj" Description="Converting project file 'F:\MathematicsServerClient\test\test.vcproj'.">
+</Event><Event ErrorLevel="1" Project="test" Source="test\test.vcproj" Description="VCConvertEngine could not convert attribute CompileAsManaged =  under Tool VCNMakeTool.">
+</Event><Event ErrorLevel="1" Project="test" Source="test\test.vcproj" Description="VCConvertEngine could not convert attribute CompileAsManaged =  under Tool VCNMakeTool.">
+</Event><Event ErrorLevel="0" Project="test" Source="test\test.vcproj" Description="Done converting to new project file 'F:\MathematicsServerClient\test\test.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="test" Source="test\test.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="test.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="test.sln" Description="Converted">
+</Event></UpgradeLog>

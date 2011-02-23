@@ -1,2 +1,14 @@
 Examples go here.
-Since we are following the prototyping methodology, we are making alot of example programs to test out various components of our system. 
+
+-- Examples in this directory -- 
+
+MD5_CodeCrack.zip: Uses a server and clients communicating via RPC to crack a md5 hash. 
+
+MathematicsServerClient.zip: A simple RPC example. 
+
+ProcessManagement.zip: An example that demonstraits the basics of pragmatically making processes. Key topics include: 
+		       creating a process, how to provide command line arguments to a process, and how to get the exit code 
+		       of a created process. 
+
+SendingFilesViaSockets.zip: An example were the server can send binary files, like .zip, .exe, etc, to the client. Key topics 
+			    include: file i/o, sockets, and sending binary files over sockets.   

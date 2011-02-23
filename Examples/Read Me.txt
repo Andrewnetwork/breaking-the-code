@@ -1,1 +1,2 @@
 Examples go here.
+Since we are following the prototyping methodology, we are making alot of example programs to test out various components of our system. 

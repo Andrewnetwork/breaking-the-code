@@ -12,3 +12,5 @@ ProcessManagement.zip: An example that demonstraits the basics of pragmatically 
 
 SendingFilesViaSockets.zip: An example were the server can send binary files, like .zip, .exe, etc, to the client. Key topics 
 			    include: file i/o, sockets, and sending binary files over sockets.   
+
+OOPermutations.zip: I cleaned up and object oriented the permutation generation system.

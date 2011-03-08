@@ -14,3 +14,5 @@ SendingFilesViaSockets.zip: An example were the server can send binary files, li
 			    include: file i/o, sockets, and sending binary files over sockets.   
 
 OOPermutations.zip: I cleaned up and object oriented the permutation generation system.
+
+SimpleSocketsLibrary.zip: This is a simple static library that simplifies socket programming.

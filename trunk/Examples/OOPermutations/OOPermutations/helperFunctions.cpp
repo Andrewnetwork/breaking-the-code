@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std; 
 
+const char RANGE_DILIM = '~';
+
 unsigned int alphabetCount( vector<char> * alphabet )
 {
 	unsigned int nAlphaLexemes = 0;
@@ -24,4 +26,29 @@ void printCounterVector( vector<unsigned char> vect , unsigned char base)
 	}
 	 
 	cout<<" |       "<<numInBase10<<endl;
+}
+
+pair<vector<unsigned char>,vector<unsigned char> > getRangeFromString( string range )
+{
+	pair<vector<unsigned char>,vector<unsigned char>> rangePair; 
+	vector<unsigned char> lowerBound;
+	vector<unsigned char> upperBound;
+
+
+	int i;
+
+	for(i = 0; i < range.size() && range[i] != RANGE_DILIM; i++)
+	{
+		lowerBound.push_back( range[i] -1 );
+	}
+
+	for(i = i+1; i < range.size(); i++)
+	{
+		upperBound.push_back(  range[i] -1);
+	}
+
+	rangePair.first = lowerBound;
+	rangePair.second = upperBound;
+
+	return rangePair;
 }

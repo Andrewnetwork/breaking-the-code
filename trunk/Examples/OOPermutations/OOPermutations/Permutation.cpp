@@ -27,6 +27,71 @@ Permutation::~Permutation()
 const Permutation & Permutation::operator++()
 {
 
+	
+	unsigned long long int additionRemainder = 1;
+	unsigned int counterIndex = 0;
+	unsigned additionTemp = 0;
+
+	int digitCount = 1;
+
+	// Convert quantity to the counters base and add it to the counter at the same time.
+	do
+	{
+		counterIndex = this->countersSize - digitCount;
+
+		additionTemp = ( counters[ counterIndex  ]  + additionRemainder);
+
+		additionRemainder = additionTemp / 62; 
+
+		counters[ counterIndex] = additionTemp % 62;
+
+		if( (additionRemainder > 0 ) && digitCount == this->countersSize )
+		{
+			// Overflow.
+			vector<unsigned char> tmp;
+			tmp.push_back( 0 );
+
+			this->countersSize++;
+			for( int i = 0; i < counters.size(); i++)
+			{
+				tmp.push_back( counters[i] );
+			}
+
+			counters = tmp;
+		}
+
+		digitCount++;
+
+	}while(  additionRemainder > 0  );
+
+	// Range Check
+	if( permutationRange != NULL )
+	{
+		bool haveCompletedRange = true;
+
+		if(  counters.size() < permutationRange->second.size() )
+		{
+			haveCompletedRange = false;
+		}
+		else
+		{
+			// Working on a range. 
+			for( int i = this->countersSize - 1; i >= 0 && haveCompletedRange; i--)
+			{
+				if( counters[i] != permutationRange->second[i] )
+				{
+					haveCompletedRange = false;
+				}
+			}
+		}
+
+		if(  haveCompletedRange  )
+		{
+			this->haveCompletedRangeFlag = true; 
+		}
+	}
+
+	/*
 	// Incrementing
 	for(int digitIndex = this->countersSize - 1; digitIndex >= 0; digitIndex--)
 	{
@@ -41,41 +106,10 @@ const Permutation & Permutation::operator++()
 		}
 	}
 
+
 	//Range check
-	if( permutationRange != NULL )
-	{
-		bool haveCompletedRange = true; 
-		bool counterOverflowed = true;
-
-		// Working on a range. 
-		for( int i = this->countersSize - 1; i >= 0; i--)
-		{
-			if( counters[i] != permutationRange->second[i] )
-			{
-				haveCompletedRange = false;
-			}
-		
-			if( counters[i] != 0 )
-			{
-				
-				counterOverflowed = false;
-			}
-		}
-
-		if(  counterOverflowed || haveCompletedRange  )
-		{
-			if( this->countersSize < permutationRange->second.size() )
-			{
-				counters.resize( counters.size() + 1, 0 );
-				this->countersSize++;
-			}
-			else
-			{
-				this->haveCompletedRangeFlag = true; 
-			}
-		}
-	}
-
+	
+	*/
 	return *this;
 }
 

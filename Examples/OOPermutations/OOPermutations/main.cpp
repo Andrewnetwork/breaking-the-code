@@ -26,7 +26,7 @@ void main()
 	while( true )
 	{
 	
-		pair<vector<unsigned char>, vector<unsigned char>> range = c1.getRange( 10 );
+		pair<vector<unsigned char>, vector<unsigned char>> range = c1.getRange( 10000 );
 			
 		cout<<"--------------- Generating permutation on range ------------------"<<endl;
 		printCounterVector( range.first , 62);
@@ -36,7 +36,8 @@ void main()
 
 		Permutation perm(&alpha, alphaSize );
 		perm.setRange( &range );
-			
+		
+		int count = 0;
 		while( !perm.haveCompletedRange() )
 		{
 			
@@ -45,9 +46,11 @@ void main()
 				
 			// Increment permutation. 
 			++perm;
+			count++;
 			
 		}
 
+		cout<<"Count: "<<count<<endl;
 	
 	}
 

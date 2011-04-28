@@ -1,0 +1,18 @@
+serverConfig.txt
+Andrew Ribeiro 
+4/14/2011 
+Cracking the Code 
+
+This File contains a list of configuration settings for the Cracking the Code server. 
+The first word on each line is the setting name. The words and characters 
+after the first word are the values for the setting. 
+
+WARNING: Make sure you don't leave an extra space at the end of the line.
+
+#### START SETTINGS #####
+
+Server_Port 8080
+Alphabet_Pairs A Z a z 0 9
+Permutation_Interval 1000
+
+#### END SETTINGS #####

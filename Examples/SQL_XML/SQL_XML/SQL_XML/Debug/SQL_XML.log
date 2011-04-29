@@ -1,0 +1,33 @@
+﻿Build started 4/29/2011 2:25:26 PM.
+     1>Project "C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\SQL_XML\SQL_XML.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\SQL_XML.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\MySQL\MySQL Server 5.5\include" /I"C:\Program Files\MySQL\MySQL Server 5.5\include\mysql" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\SQL_XML.cpp
+         SQL_XML.cpp
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(67): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\time.inl(86) : see declaration of 'ctime'
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(107): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\time.inl(86) : see declaration of 'ctime'
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(132): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(135): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(147): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(190): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(194): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(230): warning C4244: 'initializing' : conversion from 'my_ulonglong' to 'int', possible loss of data
+     1>c:\users\jaynam\desktop\sql_xml\sql_xml.cpp(204): warning C4715: 'SQL_XML::parseXML' : not all control paths return a value
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\Debug\SQL_XML.exe" /NOLOGO /LIBPATH:"C:\Program Files\MySQL\MySQL Server 5.1\lib\opt\libmysql.lib" /LIBPATH:"C:\Program Files\MySQL\MySQL Server 5.5\lib" libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SQL_XML.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\Debug\SQL_XML.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\Debug\SQL_XML.lib" /MACHINE:X86 Debug\Main.obj
+         Debug\SQL_XML.obj
+         LINK : C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\Debug\SQL_XML.exe not found or not built by the last incremental link; performing full link
+         SQL_XML.vcxproj -> C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\Debug\SQL_XML.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\Debug\SQL_XML.exe;#1" /manifest Debug\SQL_XML.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\SQL_XML.unsuccessfulbuild".
+         Touching "Debug\SQL_XML.lastbuildstate".
+     1>Done Building Project "C:\Users\jaynam\Desktop\SQL_XML\SQL_XML\SQL_XML\SQL_XML.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.33
